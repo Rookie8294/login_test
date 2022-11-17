@@ -4,11 +4,11 @@ const home = (req, res)=>{
   res.render("home/index");
 };
 
-const login = (req, res)=>{
+const loginPage = (req, res)=>{
   res.render("home/login")
 };
 
 module.exports = {
   home,
-  login,
+  loginPage,
 }
