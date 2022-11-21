@@ -19,9 +19,9 @@ const output = {
 
 // front단에서 요청한 변수 데이터를 req로 받는다
 const process = {
-  login: (req, res)=>{
+  login: async (req, res)=>{
     const user = new User(req.body);
-    const response = user.login();
+    const response = await user.login();
     return res.json(response);
   },
 
