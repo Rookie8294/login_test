@@ -2,8 +2,11 @@
 
 // 모듈
 const { strict } = require('assert');
-const bodyParser = require("body-parser");
 const express = require('express');
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv")
+dotenv.config();
+
 const app = express();
 
 

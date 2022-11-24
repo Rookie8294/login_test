@@ -32,7 +32,8 @@ function register(){
   .then((res)=> res.json())
   .then((res) => {
     if (res.success){
-      location.href = "/login";
+      console.log('hi')
+      location.href = "/login"
     } else {
       alert(res.msg);
     }

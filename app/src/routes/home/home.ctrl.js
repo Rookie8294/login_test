@@ -1,7 +1,6 @@
 "use strict";
 
 const User = require("../../model/User");
-const UserStorage = require("../../model/UserStorage");
 
 const output = {
   home : (req, res)=>{
@@ -30,25 +29,6 @@ const process = {
     const response = await user.register();
     return res.json(response)
   },
-
-    // const id = req.body.id,
-    //   psword = req.body.psword
-
-    // const user = UserStorage.getUser("id", "psword")
-
-    // const response = {};
-    // if(user.id.includes(id)){
-    //   const idx = user.id.indexOf(id);
-    //   if(user.psword[idx]=== psword){
-    //     response.success = true;
-    //     return res.json(response);
-    //   }
-    // }
-
-    // response.success = false;
-    // response.msg = "로그인에 실패하셨습니다.";
-    // return res.json(response);
-
 };
 
 module.exports = {
