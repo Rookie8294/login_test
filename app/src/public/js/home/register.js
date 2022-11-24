@@ -35,6 +35,7 @@ function register(){
       console.log('hi')
       location.href = "/login"
     } else {
+      if (res.err) return alert(res.err)
       alert(res.msg);
     }
   })
